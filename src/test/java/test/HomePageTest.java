@@ -27,7 +27,7 @@ public class HomePageTest extends UiBase {
     @Test
     public void verifyCreatePrimaryButtonAccountForm(){
         clickElement(homepage.createAccountButton);
-        String actualHeadingText = getElementText(homepage.createPrimaryAccountForm);
+        String actualHeadingText = getElementTextWait(homepage.createPrimaryAccountForm);
         Assert.assertEquals(actualHeadingText,"Create Primary Account Holder");
     }
 
